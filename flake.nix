@@ -7,7 +7,7 @@
         nixpkgs-devel.url       = github:cadkin/nixpkgs/devel;
 
         home-manager = {
-            url = "github:nix-community/home-manager";
+            url = github:nix-community/home-manager;
             inputs.nixpkgs.follows = "nixpkgs";
         };
     };

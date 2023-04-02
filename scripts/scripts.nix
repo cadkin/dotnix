@@ -11,7 +11,7 @@ in
                 name = "cycle_sinks";
                 runtimeInputs = [ pkgs.python310 pkgs.pulseaudio pkgs.libnotify ];
                 text = ''
-                    ${pkgs.python310}/bin/python3 ${store.cycle_sinks}
+                    ${pkgs.python310}/bin/python3 ${store.cycle_sinks} "$@"
                 '';
                 checkPhase = false;
         } )
