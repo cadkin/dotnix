@@ -34,6 +34,7 @@
                 ./home/home.nix
                 ./home/xdg.nix
                 ./home/xresources.nix
+                ./home/env.nix
 
                 ./scripts/scripts.nix
 

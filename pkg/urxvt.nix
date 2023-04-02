@@ -16,4 +16,8 @@
         transparent = true;
         shading = 10;
     };
+
+    xresources.properties = {
+        "URxvt*reverseVideo" = true;
+    };
 }

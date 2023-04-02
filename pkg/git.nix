@@ -7,7 +7,7 @@
         lfs.enable = true;
 
         userName  = "cadkin";
-        userEmail = "<redacted>";
+        userEmail = "cva@siliconslumber.net";
 
         delta.options = {
             decorations = {
