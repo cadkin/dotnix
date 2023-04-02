@@ -32,11 +32,14 @@
                 ./home/xdg.nix
                 ./home/xresources.nix
 
+                ./scripts/scripts.nix
+
                 ./dot/dot.nix
 
                 ./pkg/git.nix
                 ./pkg/vim.nix
                 ./pkg/urxvt.nix
+                ./pkg/ssh.nix
             ];
         };
     };
