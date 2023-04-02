@@ -29,6 +29,7 @@
 
             modules = [
                 ./home/home.nix
+                ./home/xdg.nix
 
                 ./pkg/dot.nix
 
