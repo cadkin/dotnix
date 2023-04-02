@@ -4,7 +4,7 @@
 
 2. Clone this repo to `$HOME/.dotnix`.
 
-3. Change `home.username` in `home/home.nix` and `homeConfigurations.<user>` in `flake.nix` to your username. Also change `home.homeDirectory` if that's different for some reason.
+3. Change `username` in `user.nix` to your username. Also change `home.homeDirectory` in `home/home.nix` if that's different for some reason.
 
 4. Bootstrap with:
    ```

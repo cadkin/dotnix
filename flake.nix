@@ -15,14 +15,17 @@
     outputs = attrs @ { self, nixpkgs, home-manager, ... }: rec {
         system = "x86_64-linux";
 
+        hm-config = import ./user.nix { };
+
         defaultPackage.${system} = home-manager.defaultPackage.${system};
 
-        homeConfigurations.cva = home-manager.lib.homeManagerConfiguration rec {
+        homeConfigurations.${hm-config.username} = home-manager.lib.homeManagerConfiguration rec {
             extraSpecialArgs = {
                 inputs = self.inputs;
                 pkgs = import attrs.nixpkgs {
                     inherit system;
                 };
+                username = hm-config.username;
             };
 
             pkgs = extraSpecialArgs.pkgs;

@@ -8,6 +8,7 @@ set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 set mouse=a
 " 256 colors on dark background.
 set t_Co=256
+set term=xterm-256color
 set background=dark
 " Paste insert toggle
 set pastetoggle=<F2>
