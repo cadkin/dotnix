@@ -30,15 +30,15 @@
             modules = [
                 ./home/home.nix
                 ./home/xdg.nix
+                ./home/xresources.nix
 
-                ./pkg/dot.nix
+                ./dot/dot.nix
 
                 ./pkg/git.nix
                 ./pkg/vim.nix
+                ./pkg/urxvt.nix
             ];
-
         };
     };
-
 }
 

@@ -10,6 +10,6 @@
             lightline-vim
         ];
 
-        extraConfig = (builtins.readFile dot/vimrc);
+        extraConfig = (builtins.readFile files/vimrc);
     };
 }

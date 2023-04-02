@@ -1,7 +1,7 @@
 { config, pkgs, location, ... }:
 
 let
-    dotOutOfStore = (config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.dotnix/pkg/dot/");
+    dotOutOfStore = (config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.dotnix/dot/files/");
 in
 {
     # Generic nix file to generate home directory files.
