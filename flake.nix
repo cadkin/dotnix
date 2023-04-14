@@ -3,8 +3,8 @@
 
     inputs = {
         nixpkgs.url             = github:NixOS/nixpkgs/nixos-22.11;
-        nixpkgs-unstable.url    = github:NixOS/nixpkgs/nixpkgs-unstable;
-        nixpkgs-devel.url       = github:cadkin/nixpkgs/devel;
+        nixpkgs-master.url      = github:NixOS/nixpkgs/master;
+        nixpkgs-devel.url       = github:cadkin/nixpkgs/qtcreator;
 
         home-manager = {
             url = github:nix-community/home-manager;
@@ -25,6 +25,13 @@
                 pkgs = import attrs.nixpkgs {
                     inherit system;
                 };
+                pkgs-master = import attrs.nixpkgs-master {
+                    inherit system;
+                };
+                pkgs-devel = import attrs.nixpkgs-devel {
+                    inherit system;
+                };
+
                 username = hm-config.username;
             };
 
@@ -35,6 +42,7 @@
                 ./home/xdg.nix
                 ./home/xresources.nix
                 ./home/env.nix
+                ./home/pkg.nix
 
                 ./scripts/scripts.nix
 
